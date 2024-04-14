@@ -1,14 +1,16 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-# Create your models here.
-
 
 class Breed(models.Model):
 
     name = models.CharField(max_length=100)
-    size = models.CharField(max_length=1,  choices=[(
-        'Tiny',), ('Small',), ('Medium',), ('Large',)])
+    size = models.CharField(max_length=10, choices=[
+        ('Tiny', 'Tiny'),
+        ('Small', 'Small'),
+        ('Medium', 'Medium'),
+        ('Large', 'Large'),
+    ])
     friendliness = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(5)])
     trainability = models.IntegerField(
