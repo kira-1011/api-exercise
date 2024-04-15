@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This Django REST API exercise involves building API endpoints for managing Dog and Breed models. The API allows users to perform CRUD operations on Dog and Breed records.
+This Django REST FRAMEWORK API exercise involves building API endpoints for managing Dog and Breed models. The API allows users to perform CRUD operations on Dog and Breed records.
 
 ## Project Setup
 1. Clone this repository.
